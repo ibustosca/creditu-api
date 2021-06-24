@@ -55,7 +55,7 @@ export class PlayerController {
         return res.status(HttpStatus.OK).json(player);
     } */
 
-    // Metodo POST para crear jugadores
+    // Metodo POST de ejemplo para crear jugadores
     /* @Post('/create')
     async createPlayer(@Res() res, @Body() createPlayerDTO: CreatePlayerDTO) {
         const player = await this.playerService.createPlayer(createPlayerDTO);
@@ -65,7 +65,7 @@ export class PlayerController {
         });
     } */
 
-    //Metodo DELETE para eliminar jugadores por Id
+    //Metodo DELETE de ejemplo para eliminar jugadores por Id
     /* @Delete('/delete')
     async deletePlayer(@Res() res, @Query('playerId') playerId) {
         const player = await this.playerService.deletePlayer(playerId);
@@ -76,7 +76,7 @@ export class PlayerController {
         });
     } */
 
-    //Metodo PUT para actualizar jugadores por Id
+    //Metodo PUT de ejemplo para actualizar jugadores por Id
     /* @Put('/update')
     async updatePlayer(@Res() res, @Body() createPlayerDTO: CreatePlayerDTO, @Query('playerId') playerId) {
         const player = await this.playerService.updatePlayer(playerId, createPlayerDTO);

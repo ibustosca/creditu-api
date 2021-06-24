@@ -19,24 +19,24 @@ export class PlayerService {
 
     //Metodo para buscar por coincidencias de nickname y status
     async getPlayersFields(id: string): Promise<Player[]> {
-        const playersFields = await this.playerModel.find({ $or: [{ nickname: { $regex: '.*' + id + '.*' } }, { status: { $regex: '.*' + id + '.*' } }] });
+        const playersFields = await this.playerModel.find({ $or: [{ nickname: { $regex: '.*' + id + '.*', $options: 'i' } }, { status: { $regex: '.*' + id + '.*', $options: 'i' } }] });
         return playersFields;
     }
 
-    //Metodo para creacion de nuevos jugadores
+    //Metodo de ejemplo para creacion de nuevos jugadores
     /* async createPlayer(createPlayerDTO: CreatePlayerDTO): Promise<Player> {
         const player = new this.playerModel(createPlayerDTO);
         await player.save();
         return player;
     } */
 
-    //Metodo para eliminacion de jugadores por Id
+    //Metodo de ejemplo para eliminacion de jugadores por Id
     /* async deletePlayer(playerId: string): Promise<Player> {
         const playerEliminado = await this.playerModel.findByIdAndDelete(playerId);
         return playerEliminado;
     } */
 
-    //Metodo para modificacion de jugadores por Id
+    //Metodo de ejemplo para modificacion de jugadores por Id
     /* async updatePlayer(playerId: string, createPlayerDTO: CreatePlayerDTO): Promise<Player> {
         const playerActualizado = await this.playerModel.findByIdAndUpdate(playerId, createPlayerDTO, { new: true }); //Devuelve el objeto nuevo actualizado
         return playerActualizado;
