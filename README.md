@@ -56,4 +56,4 @@ Es importante destacar que en la línea 9 del archivo **app.module.ts** puedes o
 ```
 npm run start:dev
 ```
-Este comando te indicará tu dirección IP + Puerto de ejecución de la App.
+La API iniciará en **http://localhost:5000**.
