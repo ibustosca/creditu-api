@@ -2,6 +2,8 @@
 
 Este proyecto backend es una API que está desarrollada en Nest.js para buscar jugadores en una base de datos MongoDB.
 
+![nestjsmongo](https://user-images.githubusercontent.com/64162717/123560593-38d9b480-d771-11eb-8a1f-7b194fd71db3.png)
+
 Este proyecto se ejecuta en conjunto al proyecto frontend que se encuentra en https://github.com/ibustosca/creditu-players. Por lo que te sugiero también descargarlo e implementarlo en tu ambiente.
 
 Adicionalmente, debes contar con una base de datos en MongoDB que contenta el siguiente esquema:
