@@ -54,6 +54,16 @@ npm run start:dev
 ```
 La API iniciará en **http://localhost:5000**.
 
+## Invocación de la API
+
+Puedes invocar la API a través de un método GET tal como muestra la siguiente URL:
+
+- http://localhost:5000/player/search/1
+
+El valor numérico 1 devolverá a un jugador exacto, pero también puedes reemplazarlo por texto coincidente a los campos "nickname" y "status". Por ejemplo:
+
+- http://localhost:5000/player/search/asdd
+
 ## Opcional
 
 En caso de que quieras subir tu proyecto a una plataforma en linea como **Heroku**, te sugiero cambiar la línea 7 del archivo **main.ts** por la siguiente:
