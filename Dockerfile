@@ -1,6 +1,6 @@
 FROM node:14
 
-RUN mkdir -p /credituPlayers
+RUN mkdir /credituPlayers
 WORKDIR /credituPlayers
 
 COPY package*.json ./
